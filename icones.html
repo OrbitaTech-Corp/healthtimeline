@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F3F5F9">
+<title>Ícones do app · Orbita Tech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root { --bg: #F3F5F9; --card: #FFFFFF; --fg: #14264A; --muted: #56627A; --line: #DDE3EE; --accent: #2457E6; color-scheme: light; }
+* { box-sizing: border-box; }
+html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: 'DM Sans', system-ui, -apple-system, sans-serif; line-height: 1.5; }
+main { max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;
+  padding-top: max(20px, env(safe-area-inset-top)); padding-bottom: max(40px, env(safe-area-inset-bottom));
+  padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; }
+.brand { font-family: 'Sora', system-ui, sans-serif; font-size: 15px; font-weight: 800; }
+.brand span { color: #5E6A75; }
+.top a { color: var(--accent); text-decoration: none; }
+header { display: flex; flex-direction: column; gap: 8px; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { margin: 0; font-family: 'Sora', system-ui, sans-serif; font-size: clamp(26px, 6vw, 36px); line-height: 1.12; text-wrap: balance; }
+.lead { margin: 0; max-width: 60ch; color: var(--muted); }
+.grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 760px) { .grid { grid-template-columns: 1fr 1fr; } }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 20px; display: flex; gap: 18px; align-items: flex-start; }
+.hero { flex-shrink: 0; }
+.ic { display: block; border-radius: 22.5%; overflow: hidden; flex-shrink: 0; }
+.hero .ic { box-shadow: 0 14px 30px -14px rgba(20, 38, 74, .45), 0 0 0 1px rgba(20, 38, 74, .06); }
+.info { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+h2 { margin: 0; font-family: 'Sora', system-ui, sans-serif; font-size: 18px; line-height: 1.25; display: flex; align-items: center; gap: 8px; }
+.num { width: 24px; height: 24px; border-radius: 8px; background: var(--fg); color: #FFFFFF; font-size: 13px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.info p { margin: 0; font-size: 14.5px; color: var(--muted); }
+.minis { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 4px; }
+.mini { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 14px; }
+.mini.light { background: #E9EDF3; }
+.mini.dark { background: #1A1F29; }
+@media (max-width: 430px) {
+  .card { flex-direction: column; align-items: center; text-align: center; }
+  .info { align-items: center; }
+  .minis { justify-content: center; }
+}
+.home { border-radius: 28px; padding: 28px 20px; background: linear-gradient(160deg, #3B4A7A 0%, #1E2747 55%, #12172A 100%); display: flex; flex-direction: column; gap: 18px; }
+.home h2 { color: #FFFFFF; }
+.home p { margin: 0; color: #C9D2E6; font-size: 14.5px; }
+.apps { display: grid; grid-template-columns: repeat(4, 60px); justify-content: space-between; row-gap: 20px; max-width: 340px; width: 100%; margin: 0 auto; }
+.app { display: flex; flex-direction: column; align-items: center; gap: 6px; color: #FFFFFF; font-size: 12px; font-weight: 500; }
+.app .ic { box-shadow: 0 6px 14px -6px rgba(0,0,0,.6); }
+footer { text-align: center; font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><span class="brand">Orbita <span>Tech</span></span><a href="index.html">Ver as telas →</a></div>
+  <header>
+    <div class="eyebrow">Opções de ícone</div>
+    <h1>Oito ideias de ícone para o app</h1>
+    <p class="lead">O nome do app ainda não foi definido, então nenhum ícone usa letras ou nome. Cada um aparece grande, no tamanho real da tela inicial e nos fundos claro e escuro do celular.</p>
+  </header>
+  <section class="grid">
+    <article class="card" id="icone-1">
+      <div class="hero"><svg class="ic" style="width:128px;height:128px" viewBox="0 0 100 100" role="img" aria-label="Ícone Linha do tempo"><defs><linearGradient id="linha1g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#139488"/><stop offset="1" stop-color="#0B5F59"/></linearGradient></defs><rect width="100" height="100" fill="url(#linha1g)"/>
+  <rect x="33" y="20" width="5" height="60" rx="2.5" fill="#FFFFFF" opacity=".45"/>
+  <circle cx="35.5" cy="29" r="6" fill="#FFFFFF"/><rect x="47" y="25.5" width="26" height="7" rx="3.5" fill="#FFFFFF"/>
+  <circle cx="35.5" cy="50" r="8.5" fill="#A7F3D0"/><circle cx="35.5" cy="50" r="3.5" fill="#0B5F59"/><rect x="49" y="46.5" width="20" height="7" rx="3.5" fill="#A7F3D0"/>
+  <circle cx="35.5" cy="71" r="6" fill="#FFFFFF"/><rect x="47" y="67.5" width="16" height="7" rx="3.5" fill="#FFFFFF" opacity=".8"/></svg></div>
+      <div class="info">
+        <h2><span class="num">1</span>Linha do tempo</h2>
+        <p>A história de saúde da criança como uma linha com momentos marcados. É o coração do app.</p>
+        <div class="minis">
+          <div class="mini light"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Linha do tempo"><defs><linearGradient id="linha2g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#139488"/><stop offset="1" stop-color="#0B5F59"/></linearGradient></defs><rect width="100" height="100" fill="url(#linha2g)"/>
+  <rect x="33" y="20" width="5" height="60" rx="2.5" fill="#FFFFFF" opacity=".45"/>
+  <circle cx="35.5" cy="29" r="6" fill="#FFFFFF"/><rect x="47" y="25.5" width="26" height="7" rx="3.5" fill="#FFFFFF"/>
+  <circle cx="35.5" cy="50" r="8.5" fill="#A7F3D0"/><circle cx="35.5" cy="50" r="3.5" fill="#0B5F59"/><rect x="49" y="46.5" width="20" height="7" rx="3.5" fill="#A7F3D0"/>
+  <circle cx="35.5" cy="71" r="6" fill="#FFFFFF"/><rect x="47" y="67.5" width="16" height="7" rx="3.5" fill="#FFFFFF" opacity=".8"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Linha do tempo"><defs><linearGradient id="linha3g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#139488"/><stop offset="1" stop-color="#0B5F59"/></linearGradient></defs><rect width="100" height="100" fill="url(#linha3g)"/>
+  <rect x="33" y="20" width="5" height="60" rx="2.5" fill="#FFFFFF" opacity=".45"/>
+  <circle cx="35.5" cy="29" r="6" fill="#FFFFFF"/><rect x="47" y="25.5" width="26" height="7" rx="3.5" fill="#FFFFFF"/>
+  <circle cx="35.5" cy="50" r="8.5" fill="#A7F3D0"/><circle cx="35.5" cy="50" r="3.5" fill="#0B5F59"/><rect x="49" y="46.5" width="20" height="7" rx="3.5" fill="#A7F3D0"/>
+  <circle cx="35.5" cy="71" r="6" fill="#FFFFFF"/><rect x="47" y="67.5" width="16" height="7" rx="3.5" fill="#FFFFFF" opacity=".8"/></svg></div>
+          <div class="mini dark"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Linha do tempo"><defs><linearGradient id="linha4g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#139488"/><stop offset="1" stop-color="#0B5F59"/></linearGradient></defs><rect width="100" height="100" fill="url(#linha4g)"/>
+  <rect x="33" y="20" width="5" height="60" rx="2.5" fill="#FFFFFF" opacity=".45"/>
+  <circle cx="35.5" cy="29" r="6" fill="#FFFFFF"/><rect x="47" y="25.5" width="26" height="7" rx="3.5" fill="#FFFFFF"/>
+  <circle cx="35.5" cy="50" r="8.5" fill="#A7F3D0"/><circle cx="35.5" cy="50" r="3.5" fill="#0B5F59"/><rect x="49" y="46.5" width="20" height="7" rx="3.5" fill="#A7F3D0"/>
+  <circle cx="35.5" cy="71" r="6" fill="#FFFFFF"/><rect x="47" y="67.5" width="16" height="7" rx="3.5" fill="#FFFFFF" opacity=".8"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Linha do tempo"><defs><linearGradient id="linha5g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#139488"/><stop offset="1" stop-color="#0B5F59"/></linearGradient></defs><rect width="100" height="100" fill="url(#linha5g)"/>
+  <rect x="33" y="20" width="5" height="60" rx="2.5" fill="#FFFFFF" opacity=".45"/>
+  <circle cx="35.5" cy="29" r="6" fill="#FFFFFF"/><rect x="47" y="25.5" width="26" height="7" rx="3.5" fill="#FFFFFF"/>
+  <circle cx="35.5" cy="50" r="8.5" fill="#A7F3D0"/><circle cx="35.5" cy="50" r="3.5" fill="#0B5F59"/><rect x="49" y="46.5" width="20" height="7" rx="3.5" fill="#A7F3D0"/>
+  <circle cx="35.5" cy="71" r="6" fill="#FFFFFF"/><rect x="47" y="67.5" width="16" height="7" rx="3.5" fill="#FFFFFF" opacity=".8"/></svg></div>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="icone-2">
+      <div class="hero"><svg class="ic" style="width:128px;height:128px" viewBox="0 0 100 100" role="img" aria-label="Ícone Conta que a gente anota"><defs><linearGradient id="fala6g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B7BFF"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="100" height="100" fill="url(#fala6g)"/>
+  <path d="M28 24h44a10 10 0 0 1 10 10v26a10 10 0 0 1-10 10H48l-14 11v-11h-6a10 10 0 0 1-10-10V34a10 10 0 0 1 10-10z" fill="#FFFFFF"/>
+  <rect x="45.5" y="33" width="9" height="28" rx="3" fill="#2563EB"/><rect x="36" y="42.5" width="28" height="9" rx="3" fill="#2563EB"/></svg></div>
+      <div class="info">
+        <h2><span class="num">2</span>Conta que a gente anota</h2>
+        <p>Um balão de fala com a cruz da saúde: registrar a consulta só falando.</p>
+        <div class="minis">
+          <div class="mini light"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Conta que a gente anota"><defs><linearGradient id="fala7g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B7BFF"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="100" height="100" fill="url(#fala7g)"/>
+  <path d="M28 24h44a10 10 0 0 1 10 10v26a10 10 0 0 1-10 10H48l-14 11v-11h-6a10 10 0 0 1-10-10V34a10 10 0 0 1 10-10z" fill="#FFFFFF"/>
+  <rect x="45.5" y="33" width="9" height="28" rx="3" fill="#2563EB"/><rect x="36" y="42.5" width="28" height="9" rx="3" fill="#2563EB"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Conta que a gente anota"><defs><linearGradient id="fala8g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B7BFF"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="100" height="100" fill="url(#fala8g)"/>
+  <path d="M28 24h44a10 10 0 0 1 10 10v26a10 10 0 0 1-10 10H48l-14 11v-11h-6a10 10 0 0 1-10-10V34a10 10 0 0 1 10-10z" fill="#FFFFFF"/>
+  <rect x="45.5" y="33" width="9" height="28" rx="3" fill="#2563EB"/><rect x="36" y="42.5" width="28" height="9" rx="3" fill="#2563EB"/></svg></div>
+          <div class="mini dark"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Conta que a gente anota"><defs><linearGradient id="fala9g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B7BFF"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="100" height="100" fill="url(#fala9g)"/>
+  <path d="M28 24h44a10 10 0 0 1 10 10v26a10 10 0 0 1-10 10H48l-14 11v-11h-6a10 10 0 0 1-10-10V34a10 10 0 0 1 10-10z" fill="#FFFFFF"/>
+  <rect x="45.5" y="33" width="9" height="28" rx="3" fill="#2563EB"/><rect x="36" y="42.5" width="28" height="9" rx="3" fill="#2563EB"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Conta que a gente anota"><defs><linearGradient id="fala10g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B7BFF"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="100" height="100" fill="url(#fala10g)"/>
+  <path d="M28 24h44a10 10 0 0 1 10 10v26a10 10 0 0 1-10 10H48l-14 11v-11h-6a10 10 0 0 1-10-10V34a10 10 0 0 1 10-10z" fill="#FFFFFF"/>
+  <rect x="45.5" y="33" width="9" height="28" rx="3" fill="#2563EB"/><rect x="36" y="42.5" width="28" height="9" rx="3" fill="#2563EB"/></svg></div>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="icone-3">
+      <div class="hero"><svg class="ic" style="width:128px;height:128px" viewBox="0 0 100 100" role="img" aria-label="Ícone Caderneta"><defs><linearGradient id="caderneta11g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A6B"/><stop offset="1" stop-color="#E8453C"/></linearGradient></defs><rect width="100" height="100" fill="url(#caderneta11g)"/>
+  <g transform="rotate(-7 50 50)"><rect x="29" y="21" width="44" height="58" rx="7" fill="#FFF6EE"/><rect x="29" y="21" width="11" height="58" rx="5" fill="#FFD9CF"/>
+  <path d="M56.5 62c-7.5-5.2-12.5-9.6-12.5-15.2 0-4 3-6.8 6.6-6.8 2.5 0 4.6 1.3 5.9 3.4 1.3-2.1 3.4-3.4 5.9-3.4 3.6 0 6.6 2.8 6.6 6.8 0 5.6-5 10-12.5 15.2z" fill="#E8453C"/></g></svg></div>
+      <div class="info">
+        <h2><span class="num">3</span>Caderneta</h2>
+        <p>Lembra a caderneta de saúde da criança que toda família já conhece, só que digital.</p>
+        <div class="minis">
+          <div class="mini light"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Caderneta"><defs><linearGradient id="caderneta12g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A6B"/><stop offset="1" stop-color="#E8453C"/></linearGradient></defs><rect width="100" height="100" fill="url(#caderneta12g)"/>
+  <g transform="rotate(-7 50 50)"><rect x="29" y="21" width="44" height="58" rx="7" fill="#FFF6EE"/><rect x="29" y="21" width="11" height="58" rx="5" fill="#FFD9CF"/>
+  <path d="M56.5 62c-7.5-5.2-12.5-9.6-12.5-15.2 0-4 3-6.8 6.6-6.8 2.5 0 4.6 1.3 5.9 3.4 1.3-2.1 3.4-3.4 5.9-3.4 3.6 0 6.6 2.8 6.6 6.8 0 5.6-5 10-12.5 15.2z" fill="#E8453C"/></g></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Caderneta"><defs><linearGradient id="caderneta13g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A6B"/><stop offset="1" stop-color="#E8453C"/></linearGradient></defs><rect width="100" height="100" fill="url(#caderneta13g)"/>
+  <g transform="rotate(-7 50 50)"><rect x="29" y="21" width="44" height="58" rx="7" fill="#FFF6EE"/><rect x="29" y="21" width="11" height="58" rx="5" fill="#FFD9CF"/>
+  <path d="M56.5 62c-7.5-5.2-12.5-9.6-12.5-15.2 0-4 3-6.8 6.6-6.8 2.5 0 4.6 1.3 5.9 3.4 1.3-2.1 3.4-3.4 5.9-3.4 3.6 0 6.6 2.8 6.6 6.8 0 5.6-5 10-12.5 15.2z" fill="#E8453C"/></g></svg></div>
+          <div class="mini dark"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Caderneta"><defs><linearGradient id="caderneta14g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A6B"/><stop offset="1" stop-color="#E8453C"/></linearGradient></defs><rect width="100" height="100" fill="url(#caderneta14g)"/>
+  <g transform="rotate(-7 50 50)"><rect x="29" y="21" width="44" height="58" rx="7" fill="#FFF6EE"/><rect x="29" y="21" width="11" height="58" rx="5" fill="#FFD9CF"/>
+  <path d="M56.5 62c-7.5-5.2-12.5-9.6-12.5-15.2 0-4 3-6.8 6.6-6.8 2.5 0 4.6 1.3 5.9 3.4 1.3-2.1 3.4-3.4 5.9-3.4 3.6 0 6.6 2.8 6.6 6.8 0 5.6-5 10-12.5 15.2z" fill="#E8453C"/></g></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Caderneta"><defs><linearGradient id="caderneta15g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A6B"/><stop offset="1" stop-color="#E8453C"/></linearGradient></defs><rect width="100" height="100" fill="url(#caderneta15g)"/>
+  <g transform="rotate(-7 50 50)"><rect x="29" y="21" width="44" height="58" rx="7" fill="#FFF6EE"/><rect x="29" y="21" width="11" height="58" rx="5" fill="#FFD9CF"/>
+  <path d="M56.5 62c-7.5-5.2-12.5-9.6-12.5-15.2 0-4 3-6.8 6.6-6.8 2.5 0 4.6 1.3 5.9 3.4 1.3-2.1 3.4-3.4 5.9-3.4 3.6 0 6.6 2.8 6.6 6.8 0 5.6-5 10-12.5 15.2z" fill="#E8453C"/></g></svg></div>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="icone-4">
+      <div class="hero"><svg class="ic" style="width:128px;height:128px" viewBox="0 0 100 100" role="img" aria-label="Ícone Família"><rect width="100" height="100" fill="#0E1116"/>
+  <circle cx="29" cy="37" r="9" fill="#A7F3D0"/><path d="M17 74V58a12 12 0 0 1 24 0v16z" fill="#A7F3D0"/>
+  <circle cx="71" cy="37" r="9" fill="#34D399"/><path d="M59 74V58a12 12 0 0 1 24 0v16z" fill="#34D399"/>
+  <circle cx="50" cy="51" r="7" fill="#FFFFFF"/><path d="M41 74V68a9 9 0 0 1 18 0v6z" fill="#FFFFFF"/></svg></div>
+      <div class="info">
+        <h2><span class="num">4</span>Família</h2>
+        <p>Pai, mãe e filho lado a lado. Deixa claro que o app cuida da família inteira.</p>
+        <div class="minis">
+          <div class="mini light"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Família"><rect width="100" height="100" fill="#0E1116"/>
+  <circle cx="29" cy="37" r="9" fill="#A7F3D0"/><path d="M17 74V58a12 12 0 0 1 24 0v16z" fill="#A7F3D0"/>
+  <circle cx="71" cy="37" r="9" fill="#34D399"/><path d="M59 74V58a12 12 0 0 1 24 0v16z" fill="#34D399"/>
+  <circle cx="50" cy="51" r="7" fill="#FFFFFF"/><path d="M41 74V68a9 9 0 0 1 18 0v6z" fill="#FFFFFF"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Família"><rect width="100" height="100" fill="#0E1116"/>
+  <circle cx="29" cy="37" r="9" fill="#A7F3D0"/><path d="M17 74V58a12 12 0 0 1 24 0v16z" fill="#A7F3D0"/>
+  <circle cx="71" cy="37" r="9" fill="#34D399"/><path d="M59 74V58a12 12 0 0 1 24 0v16z" fill="#34D399"/>
+  <circle cx="50" cy="51" r="7" fill="#FFFFFF"/><path d="M41 74V68a9 9 0 0 1 18 0v6z" fill="#FFFFFF"/></svg></div>
+          <div class="mini dark"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Família"><rect width="100" height="100" fill="#0E1116"/>
+  <circle cx="29" cy="37" r="9" fill="#A7F3D0"/><path d="M17 74V58a12 12 0 0 1 24 0v16z" fill="#A7F3D0"/>
+  <circle cx="71" cy="37" r="9" fill="#34D399"/><path d="M59 74V58a12 12 0 0 1 24 0v16z" fill="#34D399"/>
+  <circle cx="50" cy="51" r="7" fill="#FFFFFF"/><path d="M41 74V68a9 9 0 0 1 18 0v6z" fill="#FFFFFF"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Família"><rect width="100" height="100" fill="#0E1116"/>
+  <circle cx="29" cy="37" r="9" fill="#A7F3D0"/><path d="M17 74V58a12 12 0 0 1 24 0v16z" fill="#A7F3D0"/>
+  <circle cx="71" cy="37" r="9" fill="#34D399"/><path d="M59 74V58a12 12 0 0 1 24 0v16z" fill="#34D399"/>
+  <circle cx="50" cy="51" r="7" fill="#FFFFFF"/><path d="M41 74V68a9 9 0 0 1 18 0v6z" fill="#FFFFFF"/></svg></div>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="icone-5">
+      <div class="hero"><svg class="ic" style="width:128px;height:128px" viewBox="0 0 100 100" role="img" aria-label="Ícone Onda de voz"><rect width="100" height="100" fill="#FFD84D"/>
+  <rect x="17" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/><rect x="28" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/>
+  <rect x="65" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/><rect x="76" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/>
+  <rect x="45.5" y="28" width="9" height="44" rx="3" fill="#0D0D0D"/><rect x="39" y="45.5" width="22" height="9" rx="3" fill="#0D0D0D"/></svg></div>
+      <div class="info">
+        <h2><span class="num">5</span>Onda de voz</h2>
+        <p>Barras de áudio com uma cruz no meio. Forte e fácil de achar na tela do celular.</p>
+        <div class="minis">
+          <div class="mini light"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Onda de voz"><rect width="100" height="100" fill="#FFD84D"/>
+  <rect x="17" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/><rect x="28" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/>
+  <rect x="65" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/><rect x="76" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/>
+  <rect x="45.5" y="28" width="9" height="44" rx="3" fill="#0D0D0D"/><rect x="39" y="45.5" width="22" height="9" rx="3" fill="#0D0D0D"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Onda de voz"><rect width="100" height="100" fill="#FFD84D"/>
+  <rect x="17" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/><rect x="28" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/>
+  <rect x="65" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/><rect x="76" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/>
+  <rect x="45.5" y="28" width="9" height="44" rx="3" fill="#0D0D0D"/><rect x="39" y="45.5" width="22" height="9" rx="3" fill="#0D0D0D"/></svg></div>
+          <div class="mini dark"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Onda de voz"><rect width="100" height="100" fill="#FFD84D"/>
+  <rect x="17" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/><rect x="28" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/>
+  <rect x="65" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/><rect x="76" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/>
+  <rect x="45.5" y="28" width="9" height="44" rx="3" fill="#0D0D0D"/><rect x="39" y="45.5" width="22" height="9" rx="3" fill="#0D0D0D"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Onda de voz"><rect width="100" height="100" fill="#FFD84D"/>
+  <rect x="17" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/><rect x="28" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/>
+  <rect x="65" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/><rect x="76" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/>
+  <rect x="45.5" y="28" width="9" height="44" rx="3" fill="#0D0D0D"/><rect x="39" y="45.5" width="22" height="9" rx="3" fill="#0D0D0D"/></svg></div>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="icone-6">
+      <div class="hero"><svg class="ic" style="width:128px;height:128px" viewBox="0 0 100 100" role="img" aria-label="Ícone Prontuário"><rect width="100" height="100" fill="#FFFFFF"/>
+  <path d="M30 18h28l14 14v46a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z" fill="#FFFFFF" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M58 18v10a4 4 0 0 0 4 4h10" fill="none" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <circle cx="37" cy="46" r="3.5" fill="#191919"/><rect x="44" y="44" width="18" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="58" r="3.5" fill="#191919"/><rect x="44" y="56" width="14" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="70" r="3.5" fill="#E8453C"/><rect x="44" y="68" width="16" height="4" rx="2" fill="#191919"/></svg></div>
+      <div class="info">
+        <h2><span class="num">6</span>Prontuário</h2>
+        <p>Uma página com a linha do tempo dentro. Limpo, preto e branco, combina com a opção E.</p>
+        <div class="minis">
+          <div class="mini light"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Prontuário"><rect width="100" height="100" fill="#FFFFFF"/>
+  <path d="M30 18h28l14 14v46a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z" fill="#FFFFFF" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M58 18v10a4 4 0 0 0 4 4h10" fill="none" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <circle cx="37" cy="46" r="3.5" fill="#191919"/><rect x="44" y="44" width="18" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="58" r="3.5" fill="#191919"/><rect x="44" y="56" width="14" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="70" r="3.5" fill="#E8453C"/><rect x="44" y="68" width="16" height="4" rx="2" fill="#191919"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Prontuário"><rect width="100" height="100" fill="#FFFFFF"/>
+  <path d="M30 18h28l14 14v46a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z" fill="#FFFFFF" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M58 18v10a4 4 0 0 0 4 4h10" fill="none" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <circle cx="37" cy="46" r="3.5" fill="#191919"/><rect x="44" y="44" width="18" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="58" r="3.5" fill="#191919"/><rect x="44" y="56" width="14" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="70" r="3.5" fill="#E8453C"/><rect x="44" y="68" width="16" height="4" rx="2" fill="#191919"/></svg></div>
+          <div class="mini dark"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Prontuário"><rect width="100" height="100" fill="#FFFFFF"/>
+  <path d="M30 18h28l14 14v46a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z" fill="#FFFFFF" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M58 18v10a4 4 0 0 0 4 4h10" fill="none" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <circle cx="37" cy="46" r="3.5" fill="#191919"/><rect x="44" y="44" width="18" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="58" r="3.5" fill="#191919"/><rect x="44" y="56" width="14" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="70" r="3.5" fill="#E8453C"/><rect x="44" y="68" width="16" height="4" rx="2" fill="#191919"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Prontuário"><rect width="100" height="100" fill="#FFFFFF"/>
+  <path d="M30 18h28l14 14v46a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z" fill="#FFFFFF" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M58 18v10a4 4 0 0 0 4 4h10" fill="none" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <circle cx="37" cy="46" r="3.5" fill="#191919"/><rect x="44" y="44" width="18" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="58" r="3.5" fill="#191919"/><rect x="44" y="56" width="14" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="70" r="3.5" fill="#E8453C"/><rect x="44" y="68" width="16" height="4" rx="2" fill="#191919"/></svg></div>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="icone-7">
+      <div class="hero"><svg class="ic" style="width:128px;height:128px" viewBox="0 0 100 100" role="img" aria-label="Ícone Cuidado"><defs><linearGradient id="abraco31g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B6BFF"/><stop offset="1" stop-color="#6342F0"/></linearGradient></defs><rect width="100" height="100" fill="url(#abraco31g)"/>
+  <path d="M40 24a28 28 0 0 0 0 52" fill="none" stroke="#D9CEFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 24a28 28 0 0 1 0 52" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 63c-8.5-5.9-14-10.8-14-17.1 0-4.5 3.3-7.7 7.4-7.7 2.8 0 5.2 1.5 6.6 3.8 1.4-2.3 3.8-3.8 6.6-3.8 4.1 0 7.4 3.2 7.4 7.7 0 6.3-5.5 11.2-14 17.1z" fill="#FFFFFF"/></svg></div>
+      <div class="info">
+        <h2><span class="num">7</span>Cuidado</h2>
+        <p>Dois braços envolvendo um coração: proteção e carinho com a saúde dos filhos.</p>
+        <div class="minis">
+          <div class="mini light"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Cuidado"><defs><linearGradient id="abraco32g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B6BFF"/><stop offset="1" stop-color="#6342F0"/></linearGradient></defs><rect width="100" height="100" fill="url(#abraco32g)"/>
+  <path d="M40 24a28 28 0 0 0 0 52" fill="none" stroke="#D9CEFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 24a28 28 0 0 1 0 52" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 63c-8.5-5.9-14-10.8-14-17.1 0-4.5 3.3-7.7 7.4-7.7 2.8 0 5.2 1.5 6.6 3.8 1.4-2.3 3.8-3.8 6.6-3.8 4.1 0 7.4 3.2 7.4 7.7 0 6.3-5.5 11.2-14 17.1z" fill="#FFFFFF"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Cuidado"><defs><linearGradient id="abraco33g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B6BFF"/><stop offset="1" stop-color="#6342F0"/></linearGradient></defs><rect width="100" height="100" fill="url(#abraco33g)"/>
+  <path d="M40 24a28 28 0 0 0 0 52" fill="none" stroke="#D9CEFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 24a28 28 0 0 1 0 52" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 63c-8.5-5.9-14-10.8-14-17.1 0-4.5 3.3-7.7 7.4-7.7 2.8 0 5.2 1.5 6.6 3.8 1.4-2.3 3.8-3.8 6.6-3.8 4.1 0 7.4 3.2 7.4 7.7 0 6.3-5.5 11.2-14 17.1z" fill="#FFFFFF"/></svg></div>
+          <div class="mini dark"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Cuidado"><defs><linearGradient id="abraco34g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B6BFF"/><stop offset="1" stop-color="#6342F0"/></linearGradient></defs><rect width="100" height="100" fill="url(#abraco34g)"/>
+  <path d="M40 24a28 28 0 0 0 0 52" fill="none" stroke="#D9CEFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 24a28 28 0 0 1 0 52" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 63c-8.5-5.9-14-10.8-14-17.1 0-4.5 3.3-7.7 7.4-7.7 2.8 0 5.2 1.5 6.6 3.8 1.4-2.3 3.8-3.8 6.6-3.8 4.1 0 7.4 3.2 7.4 7.7 0 6.3-5.5 11.2-14 17.1z" fill="#FFFFFF"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Cuidado"><defs><linearGradient id="abraco35g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B6BFF"/><stop offset="1" stop-color="#6342F0"/></linearGradient></defs><rect width="100" height="100" fill="url(#abraco35g)"/>
+  <path d="M40 24a28 28 0 0 0 0 52" fill="none" stroke="#D9CEFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 24a28 28 0 0 1 0 52" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 63c-8.5-5.9-14-10.8-14-17.1 0-4.5 3.3-7.7 7.4-7.7 2.8 0 5.2 1.5 6.6 3.8 1.4-2.3 3.8-3.8 6.6-3.8 4.1 0 7.4 3.2 7.4 7.7 0 6.3-5.5 11.2-14 17.1z" fill="#FFFFFF"/></svg></div>
+        </div>
+      </div>
+    </article>
+    <article class="card" id="icone-8">
+      <div class="hero"><svg class="ic" style="width:128px;height:128px" viewBox="0 0 100 100" role="img" aria-label="Ícone Copiloto"><defs><linearGradient id="copiloto36g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2457E6"/><stop offset="1" stop-color="#14264A"/></linearGradient></defs><rect width="100" height="100" fill="url(#copiloto36g)"/>
+  <path d="M44 22c2.2 13.2 7.8 18.8 21 21-13.2 2.2-18.8 7.8-21 21-2.2-13.2-7.8-18.8-21-21 13.2-2.2 18.8-7.8 21-21z" fill="#FFFFFF"/>
+  <rect x="66" y="56" width="7" height="22" rx="2.5" fill="#7DD3FC"/><rect x="58.5" y="63.5" width="22" height="7" rx="2.5" fill="#7DD3FC"/></svg></div>
+      <div class="info">
+        <h2><span class="num">8</span>Copiloto</h2>
+        <p>A estrela da IA com a cruz da saúde: um assistente que organiza tudo por você.</p>
+        <div class="minis">
+          <div class="mini light"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Copiloto"><defs><linearGradient id="copiloto37g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2457E6"/><stop offset="1" stop-color="#14264A"/></linearGradient></defs><rect width="100" height="100" fill="url(#copiloto37g)"/>
+  <path d="M44 22c2.2 13.2 7.8 18.8 21 21-13.2 2.2-18.8 7.8-21 21-2.2-13.2-7.8-18.8-21-21 13.2-2.2 18.8-7.8 21-21z" fill="#FFFFFF"/>
+  <rect x="66" y="56" width="7" height="22" rx="2.5" fill="#7DD3FC"/><rect x="58.5" y="63.5" width="22" height="7" rx="2.5" fill="#7DD3FC"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Copiloto"><defs><linearGradient id="copiloto38g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2457E6"/><stop offset="1" stop-color="#14264A"/></linearGradient></defs><rect width="100" height="100" fill="url(#copiloto38g)"/>
+  <path d="M44 22c2.2 13.2 7.8 18.8 21 21-13.2 2.2-18.8 7.8-21 21-2.2-13.2-7.8-18.8-21-21 13.2-2.2 18.8-7.8 21-21z" fill="#FFFFFF"/>
+  <rect x="66" y="56" width="7" height="22" rx="2.5" fill="#7DD3FC"/><rect x="58.5" y="63.5" width="22" height="7" rx="2.5" fill="#7DD3FC"/></svg></div>
+          <div class="mini dark"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Copiloto"><defs><linearGradient id="copiloto39g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2457E6"/><stop offset="1" stop-color="#14264A"/></linearGradient></defs><rect width="100" height="100" fill="url(#copiloto39g)"/>
+  <path d="M44 22c2.2 13.2 7.8 18.8 21 21-13.2 2.2-18.8 7.8-21 21-2.2-13.2-7.8-18.8-21-21 13.2-2.2 18.8-7.8 21-21z" fill="#FFFFFF"/>
+  <rect x="66" y="56" width="7" height="22" rx="2.5" fill="#7DD3FC"/><rect x="58.5" y="63.5" width="22" height="7" rx="2.5" fill="#7DD3FC"/></svg><svg class="ic" style="width:40px;height:40px" viewBox="0 0 100 100" role="img" aria-label="Ícone Copiloto"><defs><linearGradient id="copiloto40g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2457E6"/><stop offset="1" stop-color="#14264A"/></linearGradient></defs><rect width="100" height="100" fill="url(#copiloto40g)"/>
+  <path d="M44 22c2.2 13.2 7.8 18.8 21 21-13.2 2.2-18.8 7.8-21 21-2.2-13.2-7.8-18.8-21-21 13.2-2.2 18.8-7.8 21-21z" fill="#FFFFFF"/>
+  <rect x="66" y="56" width="7" height="22" rx="2.5" fill="#7DD3FC"/><rect x="58.5" y="63.5" width="22" height="7" rx="2.5" fill="#7DD3FC"/></svg></div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="home" aria-label="Todos na tela inicial">
+    <h2>Todos na tela inicial</h2>
+    <p>Do jeito que aparecem no iPhone, para comparar qual se destaca mais.</p>
+    <div class="apps"><div class="app"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Linha do tempo"><defs><linearGradient id="linha41g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#139488"/><stop offset="1" stop-color="#0B5F59"/></linearGradient></defs><rect width="100" height="100" fill="url(#linha41g)"/>
+  <rect x="33" y="20" width="5" height="60" rx="2.5" fill="#FFFFFF" opacity=".45"/>
+  <circle cx="35.5" cy="29" r="6" fill="#FFFFFF"/><rect x="47" y="25.5" width="26" height="7" rx="3.5" fill="#FFFFFF"/>
+  <circle cx="35.5" cy="50" r="8.5" fill="#A7F3D0"/><circle cx="35.5" cy="50" r="3.5" fill="#0B5F59"/><rect x="49" y="46.5" width="20" height="7" rx="3.5" fill="#A7F3D0"/>
+  <circle cx="35.5" cy="71" r="6" fill="#FFFFFF"/><rect x="47" y="67.5" width="16" height="7" rx="3.5" fill="#FFFFFF" opacity=".8"/></svg><span>1</span></div><div class="app"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Conta que a gente anota"><defs><linearGradient id="fala42g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B7BFF"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="100" height="100" fill="url(#fala42g)"/>
+  <path d="M28 24h44a10 10 0 0 1 10 10v26a10 10 0 0 1-10 10H48l-14 11v-11h-6a10 10 0 0 1-10-10V34a10 10 0 0 1 10-10z" fill="#FFFFFF"/>
+  <rect x="45.5" y="33" width="9" height="28" rx="3" fill="#2563EB"/><rect x="36" y="42.5" width="28" height="9" rx="3" fill="#2563EB"/></svg><span>2</span></div><div class="app"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Caderneta"><defs><linearGradient id="caderneta43g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A6B"/><stop offset="1" stop-color="#E8453C"/></linearGradient></defs><rect width="100" height="100" fill="url(#caderneta43g)"/>
+  <g transform="rotate(-7 50 50)"><rect x="29" y="21" width="44" height="58" rx="7" fill="#FFF6EE"/><rect x="29" y="21" width="11" height="58" rx="5" fill="#FFD9CF"/>
+  <path d="M56.5 62c-7.5-5.2-12.5-9.6-12.5-15.2 0-4 3-6.8 6.6-6.8 2.5 0 4.6 1.3 5.9 3.4 1.3-2.1 3.4-3.4 5.9-3.4 3.6 0 6.6 2.8 6.6 6.8 0 5.6-5 10-12.5 15.2z" fill="#E8453C"/></g></svg><span>3</span></div><div class="app"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Família"><rect width="100" height="100" fill="#0E1116"/>
+  <circle cx="29" cy="37" r="9" fill="#A7F3D0"/><path d="M17 74V58a12 12 0 0 1 24 0v16z" fill="#A7F3D0"/>
+  <circle cx="71" cy="37" r="9" fill="#34D399"/><path d="M59 74V58a12 12 0 0 1 24 0v16z" fill="#34D399"/>
+  <circle cx="50" cy="51" r="7" fill="#FFFFFF"/><path d="M41 74V68a9 9 0 0 1 18 0v6z" fill="#FFFFFF"/></svg><span>4</span></div><div class="app"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Onda de voz"><rect width="100" height="100" fill="#FFD84D"/>
+  <rect x="17" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/><rect x="28" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/>
+  <rect x="65" y="34" width="7" height="32" rx="3.5" fill="#0D0D0D"/><rect x="76" y="43" width="7" height="14" rx="3.5" fill="#0D0D0D"/>
+  <rect x="45.5" y="28" width="9" height="44" rx="3" fill="#0D0D0D"/><rect x="39" y="45.5" width="22" height="9" rx="3" fill="#0D0D0D"/></svg><span>5</span></div><div class="app"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Prontuário"><rect width="100" height="100" fill="#FFFFFF"/>
+  <path d="M30 18h28l14 14v46a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z" fill="#FFFFFF" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M58 18v10a4 4 0 0 0 4 4h10" fill="none" stroke="#191919" stroke-width="4.5" stroke-linejoin="round"/>
+  <circle cx="37" cy="46" r="3.5" fill="#191919"/><rect x="44" y="44" width="18" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="58" r="3.5" fill="#191919"/><rect x="44" y="56" width="14" height="4" rx="2" fill="#191919"/>
+  <circle cx="37" cy="70" r="3.5" fill="#E8453C"/><rect x="44" y="68" width="16" height="4" rx="2" fill="#191919"/></svg><span>6</span></div><div class="app"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Cuidado"><defs><linearGradient id="abraco47g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B6BFF"/><stop offset="1" stop-color="#6342F0"/></linearGradient></defs><rect width="100" height="100" fill="url(#abraco47g)"/>
+  <path d="M40 24a28 28 0 0 0 0 52" fill="none" stroke="#D9CEFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 24a28 28 0 0 1 0 52" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 63c-8.5-5.9-14-10.8-14-17.1 0-4.5 3.3-7.7 7.4-7.7 2.8 0 5.2 1.5 6.6 3.8 1.4-2.3 3.8-3.8 6.6-3.8 4.1 0 7.4 3.2 7.4 7.7 0 6.3-5.5 11.2-14 17.1z" fill="#FFFFFF"/></svg><span>7</span></div><div class="app"><svg class="ic" style="width:60px;height:60px" viewBox="0 0 100 100" role="img" aria-label="Ícone Copiloto"><defs><linearGradient id="copiloto48g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2457E6"/><stop offset="1" stop-color="#14264A"/></linearGradient></defs><rect width="100" height="100" fill="url(#copiloto48g)"/>
+  <path d="M44 22c2.2 13.2 7.8 18.8 21 21-13.2 2.2-18.8 7.8-21 21-2.2-13.2-7.8-18.8-21-21 13.2-2.2 18.8-7.8 21-21z" fill="#FFFFFF"/>
+  <rect x="66" y="56" width="7" height="22" rx="2.5" fill="#7DD3FC"/><rect x="58.5" y="63.5" width="22" height="7" rx="2.5" fill="#7DD3FC"/></svg><span>8</span></div></div>
+  </section>
+  <footer>Orbita Tech · Ícones em rascunho para escolha da direção. Depois de escolhido, ajustamos ao nome final.</footer>
+</main>
+</body>
+</html>
