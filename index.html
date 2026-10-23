@@ -1,199 +1,55 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>HealthTimeline · Telas</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#DDEFEB">
+<title>HealthTimeline · Opção A</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap">
 <style>
-html{-webkit-text-size-adjust:100%}
-body{margin:0}
-img{max-width:100%}
-
-/* Layout: one column of option bands; each band holds three phone screens, swiped on a phone, side by side on a wide screen. */
-:root {
-  --bg: #F3F5F9;
-  --fg: #14264A;
-  --muted: #56627A;
-  --line: #D9DFEA;
-  --chip: #FFFFFF;
-  --accent: #2457E6;
-  --frame: #0B0F17;
-  --t-a: #DDEFEB; --k-a: #0F766E; --x-a: #FFFFFF;
-  --t-b: #DCE6FB; --k-b: #2563EB; --x-b: #FFFFFF;
-  --t-c: #151A22; --k-c: #34D399; --x-c: #052E1F;
-  --t-d: #EFE8FF; --k-d: #F25C54; --x-d: #FFFFFF;
-  --t-e: #FFFFFF; --k-e: #191919; --x-e: #FFFFFF;
-  --t-f: #FFD84D; --k-f: #0D0D0D; --x-f: #FFD84D;
-  --display: 'Sora', 'Segoe UI', system-ui, sans-serif;
-  --body: 'DM Sans', 'Segoe UI', system-ui, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0E131C; --fg: #E8EDF6; --muted: #A3AEC2; --line: #263044; --chip: #182031; --accent: #7EA2FF; --frame: #000000;
-    --t-a: #12302C; --t-b: #16254A; --t-c: #1B212C; --t-d: #2A2147; --t-e: #1C1C1B; --t-f: #4A3D0E;
-    --k-e: #F1F1EF; --x-e: #191919; --k-f: #FFD84D; --x-f: #0D0D0D;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0E131C; --fg: #E8EDF6; --muted: #A3AEC2; --line: #263044; --chip: #182031; --accent: #7EA2FF; --frame: #000000;
-  --t-a: #12302C; --t-b: #16254A; --t-c: #1B212C; --t-d: #2A2147; --t-e: #1C1C1B; --t-f: #4A3D0E;
-  --k-e: #F1F1EF; --x-e: #191919; --k-f: #FFD84D; --x-f: #0D0D0D;
-  color-scheme: dark;
-}
-
+:root { --bg: #DDEFEB; --fg: #0B3B37; --desc: #24524D; --k: #0F766E; --kx: #FFFFFF; --frame: #0B0F17; --nb: #0B3B37; --nf: #FFFFFF; --cb: #FFFFFF; --cf: #0B3B37; color-scheme: light; }
 * { box-sizing: border-box; }
-body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.5; }
-.wrap {
-  max-width: 1180px; margin: 0 auto;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 28px 56px;
-  display: flex; flex-direction: column; gap: 28px;
-}
-header { display: flex; flex-direction: column; gap: 14px; }
-.brand { font-family: var(--display); font-weight: 800; font-size: 15px; }
-.brand span { color: var(--muted); }
-.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
-h1 { margin: 0; font-family: var(--display); font-size: clamp(28px, 6vw, 40px); line-height: 1.1; text-wrap: balance; }
-.lead { margin: 0; max-width: 62ch; color: var(--muted); }
-nav.chips { display: flex; flex-wrap: wrap; gap: 8px; }
-nav.chips a {
-  display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px;
-  border-radius: 999px; background: var(--chip); border: 1px solid var(--line);
-  color: var(--fg); text-decoration: none; font-weight: 700; font-size: 14px;
-}
-nav.chips a:focus-visible, .phone-row:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--k); }
-
-section.opt {
-  --t: var(--t-a); --k: var(--k-a); --x: var(--x-a);
-  background: var(--t); border-radius: 28px; padding-block: 24px 28px;
-  display: flex; flex-direction: column; gap: 20px; scroll-margin-top: 16px;
-  border: 1px solid color-mix(in srgb, var(--fg) 8%, transparent);
-}
-.opt-head, .opt-foot { padding-inline: 20px; }
-.opt-head { display: flex; gap: 14px; align-items: flex-start; }
-.badge {
-  width: 46px; height: 46px; flex-shrink: 0; border-radius: 14px; background: var(--k); color: var(--x);
-  display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 800; font-size: 21px;
-}
-.opt-head div { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
-h2 { margin: 0; font-family: var(--display); font-size: 22px; line-height: 1.2; text-wrap: balance; }
-.opt-head p { margin: 0; color: var(--muted); font-size: 15px; max-width: 64ch; }
-#c { --fg: #F3F5F7; --muted: #B7BFCA; color: var(--fg); }
-#f { --muted: #3A3214; color: #0D0D0D; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #f { --muted: #E9DDB0; color: #FFF6D6; } }
-:root[data-theme="dark"] #f { --muted: #E9DDB0; color: #FFF6D6; }
-:root[data-theme="light"] #f { --muted: #3A3214; color: #0D0D0D; }
-
-.phone-row {
-  display: grid; grid-auto-flow: column; grid-auto-columns: min(74%, 300px); gap: 16px;
-  overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 20px 10px; scroll-padding-inline: 20px;
-  -webkit-overflow-scrolling: touch; scrollbar-width: thin;
-}
-figure { margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 10px; align-items: center; min-width: 0; }
-.phone {
-  width: 100%; aspect-ratio: 390 / 844; max-width: 100%;
-  border: 7px solid var(--frame); border-radius: 38px; overflow: hidden; background: var(--frame);
-  box-shadow: 0 18px 40px -22px rgba(10, 20, 40, 0.55);
-}
+html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: 'DM Sans', system-ui, -apple-system, sans-serif; line-height: 1.5; }
+main { max-width: 460px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;
+  padding-top: max(20px, env(safe-area-inset-top)); padding-bottom: max(32px, env(safe-area-inset-bottom));
+  padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+.top { display: flex; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 700; }
+.brand { font-family: 'Sora', system-ui, sans-serif; font-size: 15px; font-weight: 800; color: #14264A; }
+.brand span { color: #5E6A75; }
+.head { display: flex; align-items: flex-start; gap: 14px; }
+.badge { width: 48px; height: 48px; flex-shrink: 0; border-radius: 14px; background: var(--k); color: var(--kx); display: flex; align-items: center; justify-content: center; font-family: 'Sora', system-ui, sans-serif; font-size: 22px; font-weight: 800; }
+.head div { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+h1 { margin: 0; font-family: 'Sora', system-ui, sans-serif; font-size: 24px; line-height: 1.15; font-weight: 700; text-wrap: balance; }
+.head p { margin: 0; font-size: 15px; color: var(--desc); }
+figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.phone { width: 100%; max-width: 406px; aspect-ratio: 406 / 860; border: 8px solid var(--frame); border-radius: 50px; overflow: hidden; background: var(--frame); }
 .phone img { display: block; width: 100%; height: 100%; object-fit: cover; }
-figcaption { font-family: var(--display); font-weight: 700; font-size: 14px; }
-.swipe { margin: 0; font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
-@media (min-width: 900px) {
-  .phone-row { grid-auto-flow: row; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; padding: 4px 32px 0; gap: 32px; }
-  .opt-head, .opt-foot { padding-inline: 32px; }
-  .phone { max-width: 320px; }
-  .swipe { display: none; }
-  section.opt { padding-block: 32px 36px; }
-}
-footer { color: var(--muted); font-size: 13px; text-align: center; }
-@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+figcaption { font-family: 'Sora', system-ui, sans-serif; font-size: 15px; font-weight: 700; }
+nav { display: flex; flex-direction: column; gap: 12px; padding-top: 8px; }
+.next { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border-radius: 16px; background: var(--nb); color: var(--nf); font-family: 'Sora', system-ui, sans-serif; font-size: 15px; font-weight: 700; text-decoration: none; }
+.chips { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.chip { display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 12px; background: var(--cb); color: var(--cf); border: none; font-family: 'Sora', system-ui, sans-serif; font-weight: 700; text-decoration: none; }
+.chip.on { background: var(--k); color: var(--kx); border-color: var(--k); }
+a:focus-visible { outline: 3px solid var(--fg); outline-offset: 3px; }
+footer { text-align: center; font-size: 12px; color: var(--desc); }
 </style>
 </head>
 <body>
-
-<div class="wrap">
-  <header>
-    <div class="brand">Orbita <span>Tech</span></div>
-    <div class="eyebrow">HealthTimeline · propostas de interface</div>
-    <h1>Seis jeitos de desenhar o app</h1>
-    <p class="lead">Cada opção mostra as mesmas três telas: o início, onde a família registra a consulta por voz ou foto; a linha do tempo da criança; e o detalhe de uma consulta organizada pela IA.</p>
-    <nav class="chips" aria-label="Ir para a opção">
-      <a href="#a" style="--k: var(--k-a)"><span class="dot"></span>A · Clara</a>
-      <a href="#b" style="--k: var(--k-b)"><span class="dot"></span>B · Acolhedora</a>
-      <a href="#c" style="--k: var(--k-c)"><span class="dot"></span>C · Escura</a>
-      <a href="#d" style="--k: var(--k-d)"><span class="dot"></span>D · Lúdica</a>
-      <a href="#e" style="--k: var(--k-e)"><span class="dot"></span>E · Notion</a>
-      <a href="#f" style="--k: var(--k-f)"><span class="dot"></span>F · Ousada</a>
-    </nav>
-  </header>
-
-  <section class="opt" id="a" style="--t: var(--t-a); --k: var(--k-a); --x: var(--x-a)">
-    <div class="opt-head"><span class="badge">A</span><div><h2>Clara e direta</h2><p>Fundo branco e verde-petróleo. Um botão grande de microfone no centro, no estilo de uma busca. É a mais fiel ao "registre em 30 segundos" da especificação.</p></div></div>
-    <div class="phone-row" tabindex="0" aria-label="Telas da opção A">
-      <figure><div class="phone"><img src="a-inicio.webp" width="390" height="844" alt="Opção A, tela inicial com botão de microfone"></div><figcaption>Início</figcaption></figure>
-      <figure><div class="phone"><img src="a-timeline.webp" width="390" height="844" alt="Opção A, linha do tempo da Sofia"></div><figcaption>Linha do tempo</figcaption></figure>
-      <figure><div class="phone"><img src="a-detalhe.webp" width="390" height="844" alt="Opção A, detalhe da consulta de pediatria"></div><figcaption>Detalhe da consulta</figcaption></figure>
-    </div>
-    <p class="swipe opt-foot">Deslize para o lado para ver as 3 telas →</p>
-  </section>
-
-  <section class="opt" id="b" style="--t: var(--t-b); --k: var(--k-b); --x: var(--x-b)">
-    <div class="opt-head"><span class="badge">B</span><div><h2>Acolhedora, foco na família</h2><p>Azul e cantos bem arredondados. Os rostos da família no topo, dois blocos grandes para falar ou fotografar e o copiloto como uma conversa.</p></div></div>
-    <div class="phone-row" tabindex="0" aria-label="Telas da opção B">
-      <figure><div class="phone"><img src="b-inicio.webp" width="390" height="844" alt="Opção B, tela inicial com a família no topo"></div><figcaption>Início</figcaption></figure>
-      <figure><div class="phone"><img src="b-timeline.webp" width="390" height="844" alt="Opção B, linha do tempo"></div><figcaption>Linha do tempo</figcaption></figure>
-      <figure><div class="phone"><img src="b-detalhe.webp" width="390" height="844" alt="Opção B, detalhe da consulta"></div><figcaption>Detalhe da consulta</figcaption></figure>
-    </div>
-    <p class="swipe opt-foot">Deslize para o lado para ver as 3 telas →</p>
-  </section>
-
-  <section class="opt" id="c" style="--t: var(--t-c); --k: var(--k-c); --x: var(--x-c)">
-    <div class="opt-head"><span class="badge">C</span><div><h2>Escura e premium</h2><p>Fundo escuro e verde-menta. O início mostra o app gravando, com a onda do áudio e dicas do que falar.</p></div></div>
-    <div class="phone-row" tabindex="0" aria-label="Telas da opção C">
-      <figure><div class="phone"><img src="c-inicio.webp" width="390" height="844" loading="lazy" alt="Opção C, início gravando áudio"></div><figcaption>Início, gravando</figcaption></figure>
-      <figure><div class="phone"><img src="c-timeline.webp" width="390" height="844" loading="lazy" alt="Opção C, linha do tempo"></div><figcaption>Linha do tempo</figcaption></figure>
-      <figure><div class="phone"><img src="c-detalhe.webp" width="390" height="844" loading="lazy" alt="Opção C, detalhe da consulta"></div><figcaption>Detalhe da consulta</figcaption></figure>
-    </div>
-    <p class="swipe opt-foot">Deslize para o lado para ver as 3 telas →</p>
-  </section>
-
-  <section class="opt" id="d" style="--t: var(--t-d); --k: var(--k-d); --x: var(--x-d)">
-    <div class="opt-head"><span class="badge">D</span><div><h2>Lúdica e colorida</h2><p>Tons pastéis, letras arredondadas e um "diário" da criança. Clima leve para famílias.</p></div></div>
-    <div class="phone-row" tabindex="0" aria-label="Telas da opção D">
-      <figure><div class="phone"><img src="d-inicio.webp" width="390" height="844" loading="lazy" alt="Opção D, início"></div><figcaption>Início</figcaption></figure>
-      <figure><div class="phone"><img src="d-timeline.webp" width="390" height="844" loading="lazy" alt="Opção D, diário da Sofia"></div><figcaption>Linha do tempo</figcaption></figure>
-      <figure><div class="phone"><img src="d-detalhe.webp" width="390" height="844" loading="lazy" alt="Opção D, detalhe da consulta"></div><figcaption>Detalhe da consulta</figcaption></figure>
-    </div>
-    <p class="swipe opt-foot">Deslize para o lado para ver as 3 telas →</p>
-  </section>
-
-  <section class="opt" id="e" style="--t: var(--t-e); --k: var(--k-e); --x: var(--x-e)">
-    <div class="opt-head"><span class="badge">E</span><div><h2>Blocos estilo Notion</h2><p>Preto e branco, títulos com serifa e blocos que se expandem. Cada consulta vira uma página com propriedades.</p></div></div>
-    <div class="phone-row" tabindex="0" aria-label="Telas da opção E">
-      <figure><div class="phone"><img src="e-inicio.webp" width="390" height="844" loading="lazy" alt="Opção E, nova anotação"></div><figcaption>Início</figcaption></figure>
-      <figure><div class="phone"><img src="e-timeline.webp" width="390" height="844" loading="lazy" alt="Opção E, linha do tempo"></div><figcaption>Linha do tempo</figcaption></figure>
-      <figure><div class="phone"><img src="e-detalhe.webp" width="390" height="844" loading="lazy" alt="Opção E, detalhe da consulta"></div><figcaption>Detalhe da consulta</figcaption></figure>
-    </div>
-    <p class="swipe opt-foot">Deslize para o lado para ver as 3 telas →</p>
-  </section>
-
-  <section class="opt" id="f" style="--t: var(--t-f); --k: var(--k-f); --x: var(--x-f)">
-    <div class="opt-head"><span class="badge">F</span><div><h2>Ousada</h2><p>Amarelo forte, bordas pretas grossas e tipografia grande. Cada ação fica óbvia.</p></div></div>
-    <div class="phone-row" tabindex="0" aria-label="Telas da opção F">
-      <figure><div class="phone"><img src="f-inicio.webp" width="390" height="844" loading="lazy" alt="Opção F, início"></div><figcaption>Início</figcaption></figure>
-      <figure><div class="phone"><img src="f-timeline.webp" width="390" height="844" loading="lazy" alt="Opção F, linha do tempo"></div><figcaption>Linha do tempo</figcaption></figure>
-      <figure><div class="phone"><img src="f-detalhe.webp" width="390" height="844" loading="lazy" alt="Opção F, detalhe da consulta"></div><figcaption>Detalhe da consulta</figcaption></figure>
-    </div>
-    <p class="swipe opt-foot">Deslize para o lado para ver as 3 telas →</p>
-  </section>
-
-  <footer>Orbita Tech · Nomes e dados nas telas são exemplos ilustrativos.</footer>
-</div>
-
+<main>
+  <div class="top"><span class="brand">Orbita <span>Tech</span></span><span>Opção A de 6</span></div>
+  <div class="head"><span class="badge">A</span><div><h1>Clara e direta</h1><p>Fundo branco e verde-petróleo. Um botão grande de microfone no centro, no estilo de uma busca: a mais fiel ao "registre em 30 segundos" da especificação.</p></div></div>
+<figure><div class="phone"><img src="a-inicio.webp" width="390" height="844" alt="Opção A, início"></div><figcaption>1 · Início</figcaption></figure>
+<figure><div class="phone"><img src="a-timeline.webp" width="390" height="844" loading="lazy" alt="Opção A, linha do tempo"></div><figcaption>2 · Linha do tempo</figcaption></figure>
+<figure><div class="phone"><img src="a-detalhe.webp" width="390" height="844" loading="lazy" alt="Opção A, detalhe da consulta"></div><figcaption>3 · Detalhe da consulta</figcaption></figure>
+  <nav aria-label="Ver outras opções">
+    <a class="next" href="b.html">Próxima: Opção B
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="chips"><a href="#" aria-current="page" class="chip on">A</a><a href="b.html" class="chip">B</a><a href="c.html" class="chip">C</a><a href="d.html" class="chip">D</a><a href="e.html" class="chip">E</a><a href="f.html" class="chip">F</a></div>
+  </nav>
+  <footer>HealthTimeline · Nomes e dados nas telas são exemplos ilustrativos.</footer>
+</main>
 </body>
 </html>
